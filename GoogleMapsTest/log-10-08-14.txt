@@ -1,0 +1,40 @@
+08-10 17:32:09.138: W/dalvikvm(21113): threadid=1: thread exiting with uncaught exception (group=0x4114c2a0)
+08-10 17:32:09.138: E/AndroidRuntime(21113): FATAL EXCEPTION: main
+08-10 17:32:09.138: E/AndroidRuntime(21113): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.test.googlemapstest/com.test.googlemapstest.MainActivity}: android.view.InflateException: Binary XML file line #6: Error inflating class fragment
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2092)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2117)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.ActivityThread.access$700(ActivityThread.java:134)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1218)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.os.Looper.loop(Looper.java:137)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.ActivityThread.main(ActivityThread.java:4867)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at java.lang.reflect.Method.invokeNative(Native Method)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at java.lang.reflect.Method.invoke(Method.java:511)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1007)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:774)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at dalvik.system.NativeStart.main(Native Method)
+08-10 17:32:09.138: E/AndroidRuntime(21113): Caused by: android.view.InflateException: Binary XML file line #6: Error inflating class fragment
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:704)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:746)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:396)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:352)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:316)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.Activity.setContentView(Activity.java:1901)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at com.test.googlemapstest.MainActivity.onCreate(MainActivity.java:18)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.Activity.performCreate(Activity.java:5047)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1094)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2056)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	... 11 more
+08-10 17:32:09.138: E/AndroidRuntime(21113): Caused by: android.app.Fragment$InstantiationException: Unable to instantiate fragment com.google.android.gms.maps.MapWFragment: make sure class name exists, is public, and has an empty constructor that is public
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.Fragment.instantiate(Fragment.java:588)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.Fragment.instantiate(Fragment.java:552)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.Activity.onCreateView(Activity.java:4695)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:680)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	... 21 more
+08-10 17:32:09.138: E/AndroidRuntime(21113): Caused by: java.lang.ClassNotFoundException: com.google.android.gms.maps.MapWFragment
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:61)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at java.lang.ClassLoader.loadClass(ClassLoader.java:501)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at java.lang.ClassLoader.loadClass(ClassLoader.java:461)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	at android.app.Fragment.instantiate(Fragment.java:574)
+08-10 17:32:09.138: E/AndroidRuntime(21113): 	... 24 more
